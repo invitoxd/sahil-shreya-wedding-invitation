@@ -467,6 +467,9 @@ html.pre #hero *::after {
 #hero { transition: transform 2.8s var(--ease); }
 html.pre #hero { transform: scale(1.07); }
 
+/* nothing but the envelope may show (or be readable) until it is tapped */
+html.pre body > *:not(#opener):not(script):not(style) { visibility: hidden; }
+
 html.lock,
 html.lock body { overflow: hidden; }
 

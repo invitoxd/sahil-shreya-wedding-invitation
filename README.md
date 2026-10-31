@@ -17,4 +17,4 @@ Before publishing:
 - The coastal photos are remote Unsplash images used as placeholders. Replace them with licensed imagery and verified Caravela Beach Resort photographs.
 - Music is not included and never autoplays.
 - The Baraat venue is intentionally marked as to be confirmed.
-- Confirm event details and venue locations with the family before sharing publicly.
+- Confirm event details and venue locations with the family before sharing publicly..

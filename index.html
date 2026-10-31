@@ -2947,7 +2947,7 @@ play.addEventListener("click", function () {
     if (!("IntersectionObserver" in window)) { el.classList.add("in"); return; }
     var o = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { el.classList.add("in"); o.disconnect(); } });
-    }, { threshold: 0, rootMargin: "0px 0px 60% 0px" });   /* start before it scrolls into view */
+    }, { threshold: 0, rootMargin: "0px 0px -25% 0px" });   /* start only once the page is actually on screen */
     o.observe(el);
   }
   /* each line / ornament plays as it scrolls into view, so the pace follows the visitor's scrolling */
@@ -2956,7 +2956,7 @@ play.addEventListener("click", function () {
     if (!("IntersectionObserver" in window)) { parts.forEach(function (el) { el.classList.add("go"); }); return; }
     var po = new IntersectionObserver(function (es) {
       es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("go"); po.unobserve(e.target); } });
-    }, { threshold: 0, rootMargin: "0px 0px 70% 0px" });     /* lines are already written when you get there */
+    }, { threshold: 0, rootMargin: "0px 0px -12% 0px" });    /* each line plays only when it is on screen */
     parts.forEach(function (el) { po.observe(el); });
   }
 
